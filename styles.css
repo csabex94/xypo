@@ -320,25 +320,25 @@ form input {
 }
 
 hr {
-    width: 100%;
     border: 0;
     border-top: 1px solid #f67c92;
+    width: 80%;
+    margin: auto;
 }
 
 .footer-row {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
 }
 
 .footer-left-col {
-    flex-basis: 50%;
     margin-top: 60px;
 }
 
 .footer-right-col {
-    flex-basis: 35%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .footer-links {
@@ -365,7 +365,7 @@ hr {
 }
 
 .footer-logo img {
-    width: 100px;
+    width: 80px;
 }
 
 .footer-logo button {
@@ -479,18 +479,19 @@ hr {
     }
     /* Footer */
     .footer-left-col, .footer-right-col {
-        flex-basis: 100%;
         margin-top: 50px;
-    }
-    .copyright-text {
-        width: 180px;
-    }
-    .footer-right-col {
-        display: flex;
-        flex-direction: column;
     }
     .link-title {
         flex-basis: 50%;
         margin-bottom: 30px;
+    }
+    .footer-row {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer-logo img {
+        width: 150px;
+        margin: auto;
     }
 }
